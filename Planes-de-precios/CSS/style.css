@@ -1,106 +1,195 @@
-#tabla-precios {
- display:inline-block;
- width:100%;
- margin-top:50px
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-/*Columnas*/
-
-.precio-col {
- display:inline-block;
- background-color:#f3f3f3;
- width:100%;
- max-width:500px;
- border-radius:10px;
- margin-bottom:50px;
- box-shadow: 0px 2px 5px #ddd
+body{
+	background: #173d50;
+	font-family: 'Open sans', sans-serif;
 }
 
-@media screen and (min-width:768px) {
- .precio-col {
- width:32%;
- float:left;
- margin-right:2%
- }
- 
- .precio-col:last-child {
- margin-right:0
- }
+a{
+	text-decoration: none;
 }
 
-/*Headers*/
-
-.precio-col-header {
- background-color:#333;
- padding:20px;
- border-top-left-radius:10px;
- border-top-right-radius:10px
+ul{
+	list-style: none;
 }
 
-.precio-col:nth-child(2) .precio-col-header {
- background-color:#dd9933
+
+.wrap{
+	width: 90%;
+	max-width: 1170px;
+	margin: 50px auto;
 }
 
-.precio-col-header h3 {
- color:#f3f3f3;
- text-align:center;
- font-size:30px;
- font-weight:600;
- margin-bottom:0
+.mes-año{
+	border: 1px solid #225B78;
+	border-radius: 20px;
+	color: #fff;
+	position: relative;
+	margin: 0px auto 50px;
+	width: 200px;
+	overflow: hidden;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.precio-col-header p {
- text-align:center;
- color:#f3f3f3;
- font-size:14px;
- margin-bottom:0
+.mes-año a{
+	font-size: 14px;
+	z-index: 2;
+	position: relative;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
 }
 
-/*Características*/
-
-.precio-col-features {
- padding: 0 20px 20px 20px
+.switch-btn{
+	position: absolute;
+	background: #0C1F28;
+	width: 50%;
+	height: 90%;
+	border-radius: 20px;
+	top: 2px;
+	left: 2px;
+	z-index: 1;
+	transition: all .5s;
 }
 
-.precio-col-features p {
- padding:20px 0;
- margin:0;
- text-align:center;
- border-top:1px solid #ddd
+.on{
+	left: 97px;
 }
 
-.precio-col-features p:first-child,
-.precio-col-features p:last-child {
- border-top:none
+/* Tabla de precio*/
+
+.plan-precios{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-/*Comprar*/
+.tabla-precios{
+	width: 32%;
+	transition: transform .5s ease;
 
-.precio-col-comprar {
- padding:10px;
- max-width:250px;
- text-align:center;
- background-color:#dd9933;
- margin: 0 auto 20px;
- border-radius:10px;
- border: 2px solid #dd9933;
- transition: all 0.3s
+	-webkit-perspective: 2000px;
+	perspective: 2000px;
 }
 
-.precio-col-comprar a {
- color:#f3f3f3;
- padding:10px;
- font-size:20px;
- text-transform:uppercase;
- transition: all 0.3s
+.tabla-precios:hover{
+	transform: scale(1.07);
 }
 
-.precio-col-comprar:hover {
- background-color:#f3f3f3;
- transition: all 0.3s
+.tabla-precios-cont{
+	background: #fff;
+	text-align: center;
+	position: relative;
+	height: 500px;
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	transition: .3s ease;
 }
 
-.precio-col-comprar:hover a {
- color:#dd9933;
- transition: all 0.3s
+.tabla-precios-mes , .tabla-precios-año{
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+}
+
+.tabla-precios-año{
+	transform: rotateY(180deg);
+}
+
+.rotando-tabla{
+	transform: rotateY(180deg);
+}
+
+.tabla-precios-head{
+	color: #173D50;
+	padding: 30px 0px;
+}
+
+.tabla-precios-head h2{
+	font-size: 16px;
+	letter-spacing: 2px;	
+	font-weight: bold;
+}
+
+.tabla-precios-head h3{
+	font-size: 60px;
+	font-weight: 400;
+	display: inline;
+}
+
+.tabla-precios-head h3 sup, .tabla-precios-head h3 sub{
+	font-size: 20px;
+	color: #ABB8C0;
+	font-weight: 600;
+}
+
+.tabla-precios-head h3 sub{
+	font-size: 13px;
+}
+
+.tabla-precios-head.estandar-title h2,
+.tabla-precios-head.estandar-title h3,
+.tabla-precios-head.estandar-title h3 sup,
+.tabla-precios-head.estandar-title h3 sub{
+	color: #E97D68;
+}
+
+.tabla-precios-list li{
+	background: #F1F3F5;
+	padding: 10px 0;
+}
+
+.tabla-precios-list li:nth-child(2n){
+	background: #fff;
+}
+
+.tabla-precios-button{
+	display: block;
+	width: 100%;
+	padding: 20px 0;
+	background: #0C1F28;
+	color: #fff;
+	margin-top: 23px;
+}
+
+.tabla-precios-button.estandar{
+	background: #E97D68;
+}
+
+/* RESPONSIVE ===============================  */
+@media screen and (max-width: 750px){
+	.tabla-precios{
+		width: 72%;
+		margin-bottom: 20px;
+	}
+
+	.plan-precios{
+		justify-content: center;
+	}
+
+	.tabla-precios:hover{
+		transform: scale(1.0) ;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.tabla-precios{
+		width: 90%;
+	}
 }
