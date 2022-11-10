@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('.mes-año a').click(function(){
+	$('.estandar-premium a').click(function(){
 		$('.switch-btn').toggleClass('on');
 
 		if($('#switch-btn').attr('class') == 'switch-btn on'){

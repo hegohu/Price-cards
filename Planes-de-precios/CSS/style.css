@@ -26,7 +26,7 @@ ul{
 	margin: 50px auto;
 }
 
-.mes-año{
+.estandar-premium{
 	border: 1px solid #225B78;
 	border-radius: 20px;
 	color: #fff;
@@ -39,7 +39,7 @@ ul{
 	justify-content: space-between;
 }
 
-.mes-año a{
+.estandar-premium a{
 	font-size: 14px;
 	z-index: 2;
 	position: relative;
@@ -97,7 +97,7 @@ ul{
 	transition: .3s ease;
 }
 
-.tabla-precios-mes , .tabla-precios-año{
+.tabla-precios-estandar , .tabla-precios-premium{
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: absolute;
@@ -108,7 +108,7 @@ ul{
 	background: #fff;
 }
 
-.tabla-precios-año{
+.tabla-precios-premium{
 	transform: rotateY(180deg);
 }
 

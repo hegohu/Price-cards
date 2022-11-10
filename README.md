@@ -14,3 +14,5 @@ Pasos a seguir:
 5. Creare 3 columnas, una para personas puntuales, que quieran una pagina web para uso personal, y otras dos seran de enpresas(una de Pymes, y la otra de empresas mas grandes).
    
 6. He prpuesto dos opciones para cada categoria, una basica y otra premium, con sus respectivos precios.
+7. 
+8. Despues de definir el estilo que tendra cada cosa, he creado una pagina de contacto para mandar el plan seleccionado, pero al no tener un hosting no puedo hacer-lo funcional, espero que no sea un problema para el proyecto.

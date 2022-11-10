@@ -9,24 +9,25 @@
   </head>
   <body>
     <a href="index.html">atras</a>
-    <form action="pymes" method="post">
-      <ul>
-        <p>Tipo cliente: PYMES</p>
-        <p>Tipo de plan: Estandar</p>
-        <li>
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="user_name" />
-        </li>
-        <li>
-          <label for="mail">Correo electrónico:</label>
-          <input type="email" id="mail" name="user_mail" />
-        </li>
-        <li>
-          <label for="msg">Mensaje:</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-      </ul>
-      <button type="submit">Envíe su mensaje</button>
+    
+    <form method="post" action="mail.php">
+      <div class="resumen">
+        Has elegido el plan Estandar para pequeñas y medianas empresas.
+        Rellena el formulario siguiente para poder poner-me en contacto contigo y empezar a preparar los objetivos del proyecto.
+      </div>
+      <h2>CONTACTO</h2>
+
+      <input type="text" name="Nombre" placeholder="Nombre">
+      
+      <input type="text" name="Correo" placeholder="Correo">
+      
+      <input type="text" name="Teléfono" placeholder="Teléfono">
+      <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necessite."></textarea>
+    <button type="submit" id="boton">Enviar</button>
+      
     </form>
+    
+    
+    
   </body>
 </html>
