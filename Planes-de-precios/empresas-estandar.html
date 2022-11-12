@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/tipo-cliente.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <a href="index.html">atras</a>
-    
-    <form action="">
+    <div class="contacto">
       <div class="resumen">
+        Gracias por elegirnos, tu confianza para nosotros es muy importante, por lo que primero tendremos en cuenta en cumplir todo lo que necesitas.
+      <div class="info">
         Has elegido el plan Estandar para grandes empresas.
-        Rellena el formulario siguiente para poder poner-me en contacto contigo y empezar a preparar los objetivos del proyecto.
+        Rellena el formulario siguiente para poder ponernos en contacto contigo y empezar a preparar los objetivos del proyecto.
       </div>
-      <h2>CONTACTO</h2>
-
-      <input type="text" name="Nombre" placeholder="Nombre">
+      </div>
+      <form method="post" action="mail.php">
+        
+        <h2>CONTACTO</h2>
+  
+        <input type="text" name="Nombre" placeholder="Nombre">
+        
+        <input type="text" name="Correo" placeholder="Correo">
+        
+        <input type="text" name="Teléfono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necessite."></textarea>
+      <button type="submit" id="boton">Enviar</button>
+        
+      </form>
       
-      <input type="text" name="Correo" placeholder="Correo">
-      
-      <input type="text" name="Teléfono" placeholder="Teléfono">
-      <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necessite."></textarea>
-    <button type="submit" id="boton">Enviar</button>
-      
-    </form>
+    </div>
+    
+    
+    
   </body>
 </html>

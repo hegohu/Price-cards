@@ -7,12 +7,12 @@ Pasos a seguir:
    
 2. Crear el repositorio donde guardare el proyecto, en este caso lo llamaré "Price-cards".
    
-3. Definir con que tecnologia realizaré el proyecto, en este caso, empezaré con HTML y CSS, ya que son las tecnologias que mas comodo me siento al trabajar-las, mas adelanté vere si añado alguna mas o las canvio.
+3. Definir con que tecnologia realizaré el proyecto, en este caso, será con HTML y CSS, ya que son las tecnologias que mas comodo me siento al trabajar-las.
    
 4. Definir la estructura que tendra mi plan de precios, luego ya empezare a añadir-le mas estilos.
    
 5. Creare 3 columnas, una para personas puntuales, que quieran una pagina web para uso personal, y otras dos seran de enpresas(una de Pymes, y la otra de empresas mas grandes).
    
 6. He prpuesto dos opciones para cada categoria, una basica y otra premium, con sus respectivos precios.
-7. 
-8. Despues de definir el estilo que tendra cada cosa, he creado una pagina de contacto para mandar el plan seleccionado, pero al no tener un hosting no puedo hacer-lo funcional, espero que no sea un problema para el proyecto.
+   
+7. Despues de definir el estilo que tendra cada cosa, he creado una pagina de contacto para mandar el plan seleccionado, pero al no tener un hosting no puedo hacer-lo funcional, espero que no sea un problema para el proyecto.

@@ -1,3 +1,4 @@
+/*Estilo para la maquetacion de todos los elementos*/
 *{
 	margin: 0;
 	padding: 0;
@@ -7,25 +8,28 @@
 }
 
 body{
-	background: #173d50;
-	font-family: 'Open sans', sans-serif;
+	background: #1a1a1a;
+	font-family: 'Roboto', sans-serif;
 }
 
+/*Eliminamos el estilo predeterminado de los enlaces*/
 a{
 	text-decoration: none;
 }
 
+/*Quitamos los puntos predeterminados de la lista de elementos*/
 ul{
 	list-style: none;
 }
 
-
+/*Agrupamos todos los dentro de un mismo conjunto y le aplicamos los diferentes estilos para determinar su posición y su tamaño*/
 .wrap{
 	width: 90%;
 	max-width: 1170px;
 	margin: 50px auto;
 }
 
+/*Definimos el estilo que tendra el boton para alternar entre las veriones Estandar y la Premium*/
 .estandar-premium{
 	border: 1px solid #225B78;
 	border-radius: 20px;
@@ -49,8 +53,9 @@ ul{
 }
 
 .switch-btn{
+	font-family: 'Roboto', sans-serif;
 	position: absolute;
-	background: #0C1F28;
+	background: #007172;
 	width: 50%;
 	height: 90%;
 	border-radius: 20px;
@@ -64,7 +69,9 @@ ul{
 	left: 97px;
 }
 
-/* Tabla de precio*/
+/* Tabla de precio
+Con las tres columnas de precios dentro del mismo div, aplicamos los siguientes estilos, para que se muestren en fila y con la misma separación entre ellas
+*/
 
 .plan-precios{
 	width: 100%;
@@ -74,6 +81,7 @@ ul{
 }
 
 .tabla-precios{
+	
 	width: 32%;
 	transition: transform .5s ease;
 
@@ -84,6 +92,8 @@ ul{
 .tabla-precios:hover{
 	transform: scale(1.07);
 }
+
+/*Estilos para el contenido de cada tabla*/
 
 .tabla-precios-cont{
 	background: #fff;
@@ -107,18 +117,30 @@ ul{
 	left: 0;
 	background: #fff;
 }
-
+/*Estilo aplicado para la animacion al alternar de Estandar a Premium*/
 .tabla-precios-premium{
 	transform: rotateY(180deg);
+	
 }
 
 .rotando-tabla{
 	transform: rotateY(180deg);
 }
-
+.tabla-precios-premium .tabla-precios-head{
+	
+	
+}
+.icono{
+	margin-right: 15px;
+	float: right;
+	width: 25px;
+	height: 25px;
+}
+/*Color del encabezado de cada columna*/
 .tabla-precios-head{
-	color: #173D50;
+	color: #D94F04;
 	padding: 30px 0px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .tabla-precios-head h2{
@@ -147,12 +169,14 @@ ul{
 .tabla-precios-head.estandar-title h3,
 .tabla-precios-head.estandar-title h3 sup,
 .tabla-precios-head.estandar-title h3 sub{
-	color: #E97D68;
+	color: #D94F04;
 }
 
 .tabla-precios-list li{
 	background: #F1F3F5;
 	padding: 10px 0;
+	color: #007172
+
 }
 
 .tabla-precios-list li:nth-child(2n){
@@ -163,13 +187,14 @@ ul{
 	display: block;
 	width: 100%;
 	padding: 20px 0;
-	background: #0C1F28;
+	background: #007172;
 	color: #fff;
 	margin-top: 23px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .tabla-precios-button.estandar{
-	background: #E97D68;
+	background: 
 }
 
 /* RESPONSIVE ===============================  */
