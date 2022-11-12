@@ -14,3 +14,8 @@ Pasos a seguir:
 
    
 5. Despues de definir el estilo que tendra cada cosa, he creado una pagina de contacto para mandar el plan seleccionado, pero al no tener un hosting no puedo hacer-lo funcional, espero que no sea un problema para el proyecto.
+6. Calidad del proyecto:
+   [![CodeFactor](https://www.codefactor.io/repository/github/hegohu/price-cards/badge)](https://www.codefactor.io/repository/github/hegohu/price-cards)
+
+   Enlace de la calidad: https://www.codefactor.io/repository/github/hegohu/price-cards/badge
+
