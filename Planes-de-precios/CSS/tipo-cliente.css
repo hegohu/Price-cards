@@ -6,9 +6,16 @@ body{
     font-family: 'Open sans', sans-serif;
 
 }
+.wrap{
+	width: 90%;
+	max-width: 1170px;
+	margin: 30px auto;
+}
 .contacto{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .resumen{
   width: 500px;
@@ -80,8 +87,22 @@ textarea{
    margin-left: 30%;
    border: none;
 }
-@media (max-width:480px){
-    form{
-        width: 100%;
-    }
+/* RESPONSIVE ===============================  */
+@media screen and (max-width: 750px){
+	.resumen{
+		width: 72%;
+		margin-bottom: 20px;
+	}
+
+	.contacto{
+		justify-content: center;
+	}
+
+	
+}
+
+@media screen and (max-width: 500px){
+	.resumen{
+		width: 90%;
+	}
 }

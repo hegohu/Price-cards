@@ -11,30 +11,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="contacto">
-      <div class="resumen">
-        Gracias por elegirnos, tu confianza para nosotros es muy importante, por lo que primero tendremos en cuenta en cumplir todo lo que necesitas.
-      <div class="info">
-        Has elegido el plan Starter, este plan es gratuito.
-        Rellena el formulario siguiente para poder ponernos en contacto contigo y empezar a preparar los objetivos del proyecto.
-        Si tienes alguna duda, no dudes en añadirla al formulario, contamos contigo😉.
+    <div class="wrap">
+      <div class="contacto">
+        <div class="resumen">
+          Gracias por elegirnos, tu confianza para nosotros es muy importante, por lo que primero tendremos en cuenta en cumplir todo lo que necesitas.
+        <div class="info">
+          Has elegido el plan Starter, este plan es gratuito.
+          Rellena el formulario siguiente para poder ponernos en contacto contigo y empezar a preparar los objetivos del proyecto.
+          Si tienes alguna duda, no dudes en añadirla al formulario, contamos contigo😉.
+        </div>
+        </div>
+        <form method="post" action="mail.php">
+          
+          <h2>CONTACTO</h2>
+    
+          <input type="text" name="Nombre" placeholder="Nombre">
+          
+          <input type="text" name="Correo" placeholder="Correo">
+          
+          <input type="text" name="Teléfono" placeholder="Teléfono">
+          <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necesite."></textarea>
+        <button type="submit" id="boton">Enviar</button>
+          
+        </form>
+        
       </div>
-      </div>
-      <form method="post" action="mail.php">
-        
-        <h2>CONTACTO</h2>
-  
-        <input type="text" name="Nombre" placeholder="Nombre">
-        
-        <input type="text" name="Correo" placeholder="Correo">
-        
-        <input type="text" name="Teléfono" placeholder="Teléfono">
-        <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necesite."></textarea>
-      <button type="submit" id="boton">Enviar</button>
-        
-      </form>
-      
     </div>
+    
     
     
     

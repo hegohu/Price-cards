@@ -11,30 +11,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="contacto">
-      <div class="resumen">
-        Gracias por elegirnos, tu confianza para nosotros es muy importante, por lo que primero tendremos en cuenta en cumplir todo lo que necesitas.
-      <div class="info">
-        Has elegido el plan Pro, cuesta unos $49 al mes, este plan cuenta con bastantes ventajas, pero si quieres mas, siempre puedes pasar-te al plan Teams, que tiene mucho mas que ofrecer.
-        Rellena el formulario siguiente para poder ponernos en contacto contigo y empezar a preparar los objetivos del proyecto.
-        Si tienes una petición o duda, no dudes en añadir-la en el formulario, juntos podremos lograrlo💪.
+    <div class="wrap">
+      <div class="contacto">
+        <div class="resumen">
+          Gracias por elegirnos, tu confianza para nosotros es muy importante, por lo que primero tendremos en cuenta en cumplir todo lo que necesitas.
+        <div class="info">
+          Has elegido el plan Pro, cuesta unos $49 al mes, este plan cuenta con bastantes ventajas, pero si quieres mas, siempre puedes pasar-te al plan Teams, que tiene mucho mas que ofrecer.
+          Rellena el formulario siguiente para poder ponernos en contacto contigo y empezar a preparar los objetivos del proyecto.
+          Si tienes una petición o duda, no dudes en añadir-la en el formulario, juntos podremos lograrlo💪.
+        </div>
+        </div>
+        <form method="post" action="mail.php">
+          
+          <h2>CONTACTO</h2>
+    
+          <input type="text" name="Nombre" placeholder="Nombre">
+          
+          <input type="text" name="Correo" placeholder="Correo">
+          
+          <input type="text" name="Teléfono" placeholder="Teléfono">
+          <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necessite."></textarea>
+        <button type="submit" id="boton">Enviar</button>
+          
+        </form>
+        
       </div>
-      </div>
-      <form method="post" action="mail.php">
-        
-        <h2>CONTACTO</h2>
-  
-        <input type="text" name="Nombre" placeholder="Nombre">
-        
-        <input type="text" name="Correo" placeholder="Correo">
-        
-        <input type="text" name="Teléfono" placeholder="Teléfono">
-        <textarea name="mensaje" placeholder="Puede sugerir cualquier cosa que necessite."></textarea>
-      <button type="submit" id="boton">Enviar</button>
-        
-      </form>
-      
     </div>
+    
     
     
     
